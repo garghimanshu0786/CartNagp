@@ -1,0 +1,19 @@
+<h1> Cart</h1>
+
+<table>
+    <thead>
+    <tr>
+      <th>Product name</th>
+      <th>Price</th>
+      <th> Quantity</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of cartitems" >
+      <td>{{x.ProductName}}</td>
+      <td>{{x.Price}}</td>
+      <td>{{x.Quantity}}</td>
+    </tr>
+    </tbody>
+    <h2> Total : {{total}}</h2>
+  </table>
